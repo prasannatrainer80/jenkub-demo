@@ -40,10 +40,10 @@ pipeline {
         }
         
         stage('Deploy Kubernates') {
-			steps {
-				bat 'kubectl apply -f deployment.yaml'
-				bat 'kubectl apply -f service.yaml'
-			}
-		}
+	    steps {
+		bat 'kubectl apply -f deployment.yaml'
+		bat 'kubectl apply -f service.yaml'
+	    }
+	}
     }
 }
